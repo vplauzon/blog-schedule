@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "keyVaultName": {
+            "value": "vpl-blog-scheduling-kv"
+        },
+        "functionStorageAccountName": {
+            "value": "vplblogschedulingfunction"
+        },
+        "appInsightsName": {
+            "value": "blog-insights"
+        },
+        "functionAppName": {
+            "value": "vpl-blog-scheduling-function-app"
+        },
+        "githubToken": {
+            "value": "@Microsoft.KeyVault(SecretUri=https://vpl-blog-scheduling-kv.vault.azure.net/secrets/token/402ec96c6d5e4ece995516863663981d)"
+        }
+    }
+}
