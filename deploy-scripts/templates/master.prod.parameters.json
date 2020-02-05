@@ -15,7 +15,7 @@
             "value": "vpl-blog-scheduling-function-app"
         },
         "githubToken": {
-            "value": "@Microsoft.KeyVault(SecretUri=https://vpl-blog-scheduling-kv.vault.azure.net/secrets/token/402ec96c6d5e4ece995516863663981d)"
+            "value": "@Microsoft.KeyVault(SecretUri=https://vpl-blog-scheduling-kv.vault.azure.net/secrets/token/ea12eb6619be4de7a9524b1869326781)"
         }
     }
 }
