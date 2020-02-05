@@ -6,7 +6,7 @@
             "value": "vpl-blog-scheduling-kv"
         },
         "functionStorageAccountName": {
-            "value": "vplblogschedulingfunction"
+            "value": "vplblogschedfunction"
         },
         "appInsightsName": {
             "value": "blog-insights"
