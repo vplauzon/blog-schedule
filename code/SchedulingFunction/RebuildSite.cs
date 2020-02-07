@@ -13,7 +13,7 @@ namespace SchedulingFunction
         [FunctionName("rebuild-site")]
         public static async Task RunAsync(
             //[TimerTrigger("0/1 * * * * *")]TimerInfo timer,
-            [TimerTrigger("0 30 23 * * *")]TimerInfo timer,
+            [TimerTrigger("0 30 12 * * *")]TimerInfo timer,
             ILogger log)
         {
             var githubToken = Environment.GetEnvironmentVariable("GITHUB_TOKEN");
