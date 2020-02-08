@@ -36,7 +36,7 @@
     },
     "variables": {
         "Function App Timezone": "Eastern Standard Time",
-        "Submit Function Name": "submit-comment"
+        "Rebuild Function Name": "rebuild-site"
     },
     "resources": [
         {
@@ -115,7 +115,7 @@
                 {
                     "type": "functions",
                     "apiVersion": "2019-08-01",
-                    "name": "[variables('Submit Function Name')]",
+                    "name": "[variables('Rebuild Function Name')]",
                     "dependsOn": [
                         "[resourceId('Microsoft.Web/sites', parameters('functionAppName'))]"
                     ],
@@ -153,7 +153,7 @@
         },
         "url": {
             "type": "string",
-            "value": "[listSecrets(resourceId('Microsoft.Web/sites/functions', parameters('functionAppName'), variables('Submit Function Name')), '2019-08-01').trigger_url]"
+            "value": "[listSecrets(resourceId('Microsoft.Web/sites/functions', parameters('functionAppName'), variables('Rebuild Function Name')), '2019-08-01').trigger_url]"
         }
     }
 }
